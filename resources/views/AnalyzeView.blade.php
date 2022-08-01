@@ -3,30 +3,30 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Gallery | Adminto - Responsive Admin Dashboard Template</title>
+    <title>Projects | Non Fungiable Token</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
     <meta content="Coderthemes" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="shortcut icon" href="{{ URL::to('/') }}/images/favicon.ico">
 
     <!-- Lightbox css -->
-    <link href="./libs/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="{{ URL::to('/') }}/libs/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
 
     <!-- App css -->
-    <link href="./css/config/default/bootstrap.min.css" rel="stylesheet" type="text/css"
+    <link href="{{ URL::to('/') }}/css/config/default/bootstrap.min.css" rel="stylesheet" type="text/css"
         id="bs-default-stylesheet" />
-    <link href="./css/config/default/app.min.css" rel="stylesheet" type="text/css"
+    <link href="{{ URL::to('/') }}/css/config/default/app.min.css" rel="stylesheet" type="text/css"
         id="app-default-stylesheet" />
 
-    <link href="./css/config/default/bootstrap-dark.min.css" rel="stylesheet" type="text/css"
+    <link href="{{ URL::to('/') }}/css/config/default/bootstrap-dark.min.css" rel="stylesheet" type="text/css"
         id="bs-dark-stylesheet" disabled="disabled" />
-    <link href="./css/config/default/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet"
+    <link href="{{ URL::to('/') }}/css/config/default/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet"
         disabled="disabled" />
 
     <!-- icons -->
-    <link href="./css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ URL::to('/') }}/css/icons.min.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -42,7 +42,7 @@
         <div class="navbar-custom">
             <ul class="list-unstyled topnav-menu float-end mb-0">
 
-                <li class="d-none d-lg-block">
+                {{-- <li class="d-none d-lg-block">
                     <form class="app-search">
                         <div class="app-search-box">
                             <div class="input-group">
@@ -256,7 +256,7 @@
                         </a>
 
                     </div>
-                </li>
+                </li> --}}
 
                 <li class="dropdown notification-list">
                     <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect waves-light">
@@ -270,18 +270,18 @@
             <div class="logo-box">
                 <a href="index.html" class="logo logo-light text-center">
                     <span class="logo-sm">
-                        <img src="./images/logo-sm.png" alt="" height="22">
+                        <img src="./logo.png" alt="" height="40">
                     </span>
                     <span class="logo-lg">
-                        <img src="./images/logo-light.png" alt="" height="16">
+                        <img src="./logo.png" alt="" height="46">
                     </span>
                 </a>
                 <a href="index.html" class="logo logo-dark text-center">
                     <span class="logo-sm">
-                        <img src="./images/logo-sm.png" alt="" height="22">
+                        <img src="./logo.png" alt="" height="40">
                     </span>
                     <span class="logo-lg">
-                        <img src="./images/logo-dark.png" alt="" height="16">
+                        <img src="./logo.png" alt="" height="46">
                     </span>
                 </a>
             </div>
@@ -294,7 +294,7 @@
                 </li>
 
                 <li>
-                    <h4 class="page-title-main">Gallery</h4>
+                    <h4 class="page-title-main">NFT Analytics</h4>
                 </li>
 
             </ul>
@@ -312,32 +312,28 @@
                 <!-- User box -->
                 <div class="user-box text-center">
 
-                    <img src="./images/users/user-1.jpg" alt="user-img" title="Mat Helme"
+                    <img src="{{ URL::to('/') }}/profile.svg" alt="user-img" title="Mat Helme"
                         class="rounded-circle img-thumbnail avatar-md">
                     <div class="dropdown">
                         <a href="#" class="user-name dropdown-toggle h5 mt-2 mb-1 d-block" data-bs-toggle="dropdown"
-                            aria-expanded="false">Nowak Helme</a>
+                            aria-expanded="false">HDQdzbk ... ywa</a>
                         <div class="dropdown-menu user-pro-dropdown">
-
-                            <!-- item-->
+                            {{--
                             <a href="javascript:void(0);" class="dropdown-item notify-item">
                                 <i class="fe-user me-1"></i>
                                 <span>My Account</span>
                             </a>
 
-                            <!-- item-->
                             <a href="javascript:void(0);" class="dropdown-item notify-item">
                                 <i class="fe-settings me-1"></i>
                                 <span>Settings</span>
                             </a>
 
-                            <!-- item-->
                             <a href="javascript:void(0);" class="dropdown-item notify-item">
                                 <i class="fe-lock me-1"></i>
                                 <span>Lock Screen</span>
-                            </a>
+                            </a> --}}
 
-                            <!-- item-->
                             <a href="javascript:void(0);" class="dropdown-item notify-item">
                                 <i class="fe-log-out me-1"></i>
                                 <span>Logout</span>
@@ -346,7 +342,7 @@
                         </div>
                     </div>
 
-                    <p class="text-muted left-user-info">Admin Head</p>
+                    {{-- <p class="text-muted left-user-info">Admin Head</p> --}}
 
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -371,476 +367,26 @@
                         <li class="menu-title">Navigation</li>
 
                         <li>
-                            <a href="index.html">
+                            <a href="/">
                                 <i class="mdi mdi-view-dashboard"></i>
                                 <span> Dashboard </span>
                             </a>
                         </li>
 
-                        <li class="menu-title mt-2">Apps</li>
-
                         <li>
-                            <a href="apps-calendar.html">
-                                <i class="mdi mdi-calendar"></i>
-                                <span> Calendar </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="apps-chat.html">
-                                <i class="mdi mdi-forum"></i>
-                                <span> Chat </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#email" data-bs-toggle="collapse">
-                                <i class="mdi mdi-email"></i>
-                                <span> Email </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="email">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="email-inbox.html">Inbox</a>
-                                    </li>
-                                    <li>
-                                        <a href="email-templates.html">Email Templates</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="#sidebarTasks" data-bs-toggle="collapse">
-                                <i class="mdi mdi-clipboard"></i>
-                                <span> Tasks </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarTasks">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="task-kanban-board.html">Kanban Board</a>
-                                    </li>
-                                    <li>
-                                        <a href="task-details.html">Details</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="apps-projects.html">
+                            <a href="/project">
                                 <i class="mdi mdi-page-next"></i>
                                 <span> Projects </span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="#contacts" data-bs-toggle="collapse">
-                                <i class="mdi mdi-account"></i>
-                                <span> Contacts </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="contacts">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="contacts-list.html">Members List</a>
-                                    </li>
-                                    <li>
-                                        <a href="contacts-profile.html">Profile</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="menu-title mt-2">Custom</li>
-
-                        <li>
-                            <a href="#sidebarAuth" data-bs-toggle="collapse">
-                                <i class="mdi mdi-file-multiple"></i>
-                                <span> Auth Pages </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarAuth">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="auth-login.html">Log In</a>
-                                    </li>
-                                    <li>
-                                        <a href="auth-register.html">Register</a>
-                                    </li>
-                                    <li>
-                                        <a href="auth-recoverpw.html">Recover Password</a>
-                                    </li>
-                                    <li>
-                                        <a href="auth-lock-screen.html">Lock Screen</a>
-                                    </li>
-                                    <li>
-                                        <a href="auth-confirm-mail.html">Confirm Mail</a>
-                                    </li>
-                                    <li>
-                                        <a href="auth-logout.html">Logout</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="#sidebarExpages" data-bs-toggle="collapse">
-                                <i class="mdi mdi-layers"></i>
-                                <span> Extra Pages </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarExpages">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="pages-starter.html">Starter</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-pricing.html">Pricing</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-timeline.html">Timeline</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-invoice.html">Invoice</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-faqs.html">FAQs</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-gallery.html">Gallery</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-404.html">Error 404</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-500.html">Error 500</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-maintenance.html">Maintenance</a>
-                                    </li>
-                                    <li>
-                                        <a href="pages-coming-soon.html">Coming Soon</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="#sidebarLayouts" data-bs-toggle="collapse">
-                                <i class="mdi mdi-page-layout-sidebar-left"></i>
-                                <span> Layouts </span>
-                                <span class="menu-arrow"></span>
-
-                            </a>
-                            <div class="collapse" id="sidebarLayouts">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="layouts-horizontal.html">Horizontal</a>
-                                    </li>
-                                    <li>
-                                        <a href="layouts-preloader.html">Preloader</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="menu-title mt-2">Components</li>
-
-                        <li>
-                            <a href="#sidebarBaseui" data-bs-toggle="collapse">
-                                <i class="mdi mdi-briefcase"></i>
-                                <span> Base UI </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarBaseui">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="ui-buttons.html">Buttons</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-cards.html">Cards</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-avatars.html">Avatars</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-tabs-accordions.html">Tabs & Accordions</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-modals.html">Modals</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-progress.html">Progress</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-notifications.html">Notifications</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-offcanvas.html">Offcanvas</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-placeholders.html">Placeholders</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-spinners.html">Spinners</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-images.html">Images</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-carousel.html">Carousel</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-video.html">Embed Video</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-dropdowns.html">Dropdowns</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-tooltips-popovers.html">Tooltips & Popovers</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-general.html">General UI</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-typography.html">Typography</a>
-                                    </li>
-                                    <li>
-                                        <a href="ui-grid.html">Grid</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="widgets.html">
-                                <i class="mdi mdi-gift"></i>
-                                <span> Widgets </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#sidebarExtendedui" data-bs-toggle="collapse">
-                                <i class="mdi mdi-layers"></i>
-                                <span class="badge bg-info float-end">Hot</span>
-                                <span> Extended UI </span>
-                            </a>
-                            <div class="collapse" id="sidebarExtendedui">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="extended-range-slider.html">Range Slider</a>
-                                    </li>
-                                    <li>
-                                        <a href="extended-sweet-alert.html">Sweet Alert</a>
-                                    </li>
-                                    <li>
-                                        <a href="extended-draggable-cards.html">Draggable Cards</a>
-                                    </li>
-                                    <li>
-                                        <a href="extended-tour.html">Tour Page</a>
-                                    </li>
-                                    <li>
-                                        <a href="extended-notification.html">Notification</a>
-                                    </li>
-                                    <li>
-                                        <a href="extended-treeview.html">Tree View</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="#sidebarIcons" data-bs-toggle="collapse">
-                                <i class="mdi mdi-shield"></i>
-                                <span> Icons </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarIcons">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="icons-feather.html">Feather Icons</a>
-                                    </li>
-                                    <li>
-                                        <a href="icons-mdi.html">Material Design Icons</a>
-                                    </li>
-                                    <li>
-                                        <a href="icons-dripicons.html">Dripicons</a>
-                                    </li>
-                                    <li>
-                                        <a href="icons-font-awesome.html">Font Awesome 5</a>
-                                    </li>
-                                    <li>
-                                        <a href="icons-themify.html">Themify</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="#sidebarForms" data-bs-toggle="collapse">
-                                <i class="mdi mdi-texture"></i>
-                                <span> Forms </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarForms">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="forms-elements.html">General Elements</a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-advanced.html">Advanced</a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-validation.html">Validation</a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-wizard.html">Wizard</a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-quilljs.html">Quilljs Editor</a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-pickers.html">Picker</a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-file-uploads.html">File Uploads</a>
-                                    </li>
-                                    <li>
-                                        <a href="forms-x-editable.html">X Editable</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="#sidebarTables" data-bs-toggle="collapse">
-                                <i class="mdi mdi-view-list"></i>
-                                <span> Tables </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarTables">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="tables-basic.html">Basic Tables</a>
-                                    </li>
-                                    <li>
-                                        <a href="tables-datatables.html">Data Tables</a>
-                                    </li>
-                                    <li>
-                                        <a href="tables-editable.html">Editable Tables</a>
-                                    </li>
-                                    <li>
-                                        <a href="tables-responsive.html">Responsive Tables</a>
-                                    </li>
-                                    <li>
-                                        <a href="tables-tablesaw.html">Tablesaw Tables</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="#sidebarCharts" data-bs-toggle="collapse">
+                            <a href="/project/analyze">
                                 <i class="mdi mdi-chart-donut-variant"></i>
-                                <span> Charts </span>
-                                <span class="menu-arrow"></span>
+                                <span> Analyze </span>
                             </a>
-                            <div class="collapse" id="sidebarCharts">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="charts-flot.html">Flot Charts</a>
-                                    </li>
-                                    <li>
-                                        <a href="charts-morris.html">Morris Charts</a>
-                                    </li>
-                                    <li>
-                                        <a href="charts-chartjs.html">Chartjs Charts</a>
-                                    </li>
-                                    <li>
-                                        <a href="charts-chartist.html">Chartist Charts</a>
-                                    </li>
-                                    <li>
-                                        <a href="charts-sparklines.html">Sparkline Charts</a>
-                                    </li>
-                                </ul>
-                            </div>
                         </li>
 
-                        <li>
-                            <a href="#sidebarMaps" data-bs-toggle="collapse">
-                                <i class="mdi mdi-map"></i>
-                                <span> Maps </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarMaps">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="maps-google.html">Google Maps</a>
-                                    </li>
-                                    <li>
-                                        <a href="maps-vector.html">Vector Maps</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="#sidebarMultilevel" data-bs-toggle="collapse">
-                                <i class="mdi mdi-share-variant"></i>
-                                <span> Multi Level </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarMultilevel">
-                                <ul class="nav-second-level">
-                                    <li>
-                                        <a href="#sidebarMultilevel2" data-bs-toggle="collapse">
-                                            Second Level <span class="menu-arrow"></span>
-                                        </a>
-                                        <div class="collapse" id="sidebarMultilevel2">
-                                            <ul class="nav-second-level">
-                                                <li>
-                                                    <a href="javascript: void(0);">Item 1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript: void(0);">Item 2</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <a href="#sidebarMultilevel3" data-bs-toggle="collapse">
-                                            Third Level <span class="menu-arrow"></span>
-                                        </a>
-                                        <div class="collapse" id="sidebarMultilevel3">
-                                            <ul class="nav-second-level">
-                                                <li>
-                                                    <a href="javascript: void(0);">Item 1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#sidebarMultilevel4" data-bs-toggle="collapse">
-                                                        Item 2 <span class="menu-arrow"></span>
-                                                    </a>
-                                                    <div class="collapse" id="sidebarMultilevel4">
-                                                        <ul class="nav-second-level">
-                                                            <li>
-                                                                <a href="javascript: void(0);">Item 1</a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="javascript: void(0);">Item 2</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
                     </ul>
 
                 </div>
@@ -868,37 +414,89 @@
                         <div class="col-lg-12">
                             <div class="portfolioFilter">
                                 <a href="#" data-filter="*" class="current waves-effect waves-primary">All</a>
-                                <a href="#" data-filter=".natural" class="waves-effect waves-primary">Natural</a>
-                                <a href="#" data-filter=".creative" class="waves-effect waves-primary">Creative</a>
-                                <a href="#" data-filter=".personal" class="waves-effect waves-primary">Personal</a>
-                                <a href="#" data-filter=".photography"
-                                    class="waves-effect waves-primary">Photography</a>
+                                <a href="#" data-filter=".rating1" class="waves-effect waves-primary">Rating 1</a>
+                                <a href="#" data-filter=".rating2" class="waves-effect waves-primary">Rating 2</a>
+                                <a href="#" data-filter=".rating3" class="waves-effect waves-primary">Rating 3</a>
+                                <a href="#" data-filter=".rating4" class="waves-effect waves-primary">Rating 4</a>
+                                <a href="#" data-filter=".rating5" class="waves-effect waves-primary">Rating 5</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="port mb-2">
                         <div class="row portfolioContainer">
-                          @foreach($data as $val)
-                            <div class="col-xl-3 col-lg-4 col-md-6 natural personal">
-                                <div class="gal-detail thumb">
-                                    <a href="{{ $val->assets ? $val->assets['bannerImage'] : $val->image }}" class="image-popup" title="Screenshot-1">
-                                        <img src="{{ $val->assets ? $val->assets['bannerImage'] : $val->image }}" class="thumb-img img-fluid"
-                                            alt="work-thumbnail">
-                                    </a>
+                        @php
+                            $count = 1;
+                        @endphp
+                        @for($i = 0; $i < count($result); $i++)
+                            @for($j = 0; $j < count($result[$i]); $j++)
+                            <div class="col-xl-4 {{ "rating".($i+1) }}">
+                                <div class="card">
+                                    <div class="card-body project-box">
+                                        <div class="badge bg-{{ $color[($i+1)] }} float-end ">{{ "Rating ".($i+1) }}</div>
+                                        <h4 class="mt-0"><a href="" class="text-dark">{{ $data[$result[$i][$j][0]]->name }}</a></h4>
+                                        <p class="text-success text-uppercase font-13">{{ str_replace(' ', '_', $data[$result[$i][$j][0]]->name) }}</p>
+                                        <p class="text-muted font-13">{{ $result[$i][$j][3] }} SOL</p>
 
-                                    <div class="text-center">
-                                        <h4>{{ $val->name }}</h4>
-                                        <p class="font-13 text-muted mb-2">{{ $val->symbol }}</p>
-                                        <p class="font-13 text-muted mb-2">{{ \Illuminate\Support\Str::limit($val->description, 100, $end='...') }}</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item me-4">
+                                                <h4 class="mb-0">{{ $result[$i][$j][1] }}</h4>
+                                                <p class="text-muted">Total Item</p>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <h4 class="mb-0">{{ $result[$i][$j][2] }}</h4>
+                                                <p class="text-muted">Total Volume</p>
+                                            </li>
+                                        </ul>
+
+                                        <div class="project-members mb-2">
+                                            <h5 class="float-start me-3">Unique Holders : <span class="rounded-pill text-info">{{ $result[$i][$j][4] }}</span></h5>
+                                            <div class="avatar-group">
+                                                <a href="#" class="avatar-group-item" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="Mat Helme">
+                                                    <img src="{{ URL::to('/') }}/images/users/user-1.jpg"
+                                                        class="rounded-circle avatar-sm" alt="friend" />
+                                                </a>
+
+                                                <a href="#" class="avatar-group-item" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="Michael Zenaty">
+                                                    <img src="{{ URL::to('/') }}/images/users/user-2.jpg"
+                                                        class="rounded-circle avatar-sm" alt="friend" />
+                                                </a>
+
+                                                <a href="#" class="avatar-group-item" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="James Anderson">
+                                                    <img src="{{ URL::to('/') }}/images/users/user-3.jpg"
+                                                        class="rounded-circle avatar-sm" alt="friend" />
+                                                </a>
+
+                                                <a href="#" class="avatar-group-item" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="Mat Helme">
+                                                    <img src="{{ URL::to('/') }}/images/users/user-4.jpg"
+                                                        class="rounded-circle avatar-sm" alt="friend" />
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <h5>Recomendation <span class="text-{{ $color[($i+1)] }} float-end">{{ number_format(((100 / count($data)) * $count), 2) }}%</span></h5>
+                                        <div class="progress progress-bar-alt-{{ $color[($i+1)] }} progress-sm">
+                                            <div class="progress-bar bg-{{ $color[($i+1)] }} progress-animated wow animated animated"
+                                                role="progressbar" aria-valuenow="{{ number_format(((100 / count($data)) * $count), 2) }}" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: {{ number_format(((100 / count($data)) * $count), 2) }}%; visibility: visible; animation-name: animationProgress;">
+                                            </div><!-- /.progress-bar .progress-bar-danger -->
+                                        </div><!-- /.progress .no-rounded -->
+
                                     </div>
                                 </div>
                             </div>
-                          @endforeach
-
-                        </div><!-- end portfoliocontainer-->
-                    </div> <!-- End row -->
-
+                            @php
+                                $count++;
+                            @endphp
+                            @endfor
+                        @endfor
+                        </div><!-- end -->
+                    </div>
                 </div> <!-- container -->
 
             </div> <!-- content -->
@@ -911,7 +509,7 @@
                             <script>
                                 document.write(new Date().getFullYear())
 
-                            </script> &copy; Adminto theme by <a href="">Coderthemes</a>
+                            </script> &copy; Alrights Reserved by <a href="https://www.instagram.com/babaww_">BabawRtxX</a>
                         </div>
                         <div class="col-md-6">
                             <div class="text-md-end footer-links d-none d-sm-block">
@@ -1092,19 +690,19 @@
     <div class="rightbar-overlay"></div>
 
     <!-- Vendor js -->
-    <script src="./js/vendor.min.js"></script>
+    <script src="{{ URL::to('/') }}/js/vendor.min.js"></script>
 
     <!-- isotope filter plugin -->
-    <script src="./libs/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="{{ URL::to('/') }}/libs/isotope-layout/isotope.pkgd.min.js"></script>
 
     <!-- Magnific Popup-->
-    <script src="./libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="{{ URL::to('/') }}/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Gallery Init-->
-    <script src="./js/pages/gallery.init.js"></script>
+    <script src="{{ URL::to('/') }}/js/pages/gallery.init.js"></script>
 
     <!-- App js -->
-    <script src="./js/app.min.js"></script>
+    <script src="{{ URL::to('/') }}/js/app.min.js"></script>
 
 </body>
 

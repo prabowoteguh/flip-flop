@@ -20,6 +20,10 @@ class Collection extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->integer('totalItems')->nullable();
+            $table->double('totalSupply')->nullable();
+            $table->double('totalVolume')->nullable();
+            $table->double('totalFloor')->nullable();
+            $table->double('totalOwners')->nullable();
             $table->date('date')->nullable();
             $table->string('image')->nullable();
             $table->json('assets')->nullable();

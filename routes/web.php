@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Http;
-use App\Models\Collection;
 use Illuminate\Support\Facades\DB;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,12 +16,13 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    // return $response = Http::dd()->withHeaders([
-    //     "Accept" => "application/json, text/plain, */*",
-    //     "Access-Control-Allow-Origin" => "*",
-    // ])->get('https://api-mainnet.magiceden.io/popular_collections?more=true&timeRange=7d&edge_cache=true');
-    $data = Collection::all();
-    $data = DB::table("collections")->limit(50)->get();
-    // dd($data[130]->assets);
-    return view('collection_all', ["data" => $data]);
+    $data = DB::table("collections")->get();
+    return view('Dashboard', ["data" => $data]);
+});
+
+Route::prefix('project')->group(function () {
+    Route::controller(ProjectController::class)->group(function () {
+        Route::get('/', 'index');
+        Route::get('/analyze', 'analyze');
+    });
 });
